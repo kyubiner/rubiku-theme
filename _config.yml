@@ -2,4 +2,4 @@ title: tonic-starter
 description: "this is description about jekyll theme, use ruby language programing, i made this for event ysws hackclub 'Tonic'"
 encoding: utf-8
 
-exclude: ["README.md", "LICENSE", "*.gem", "*.gemspec", "Gemfile.lock", "index.md"]
+exclude: ["README.md", "LICENSE", "*.gem", "*.gemspec", "Gemfile.lock"]
