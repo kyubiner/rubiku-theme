@@ -1,0 +1,23 @@
+nav {
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    width: 100wh;
+    padding: 0.5rem;
+    align-content: center;
+    align-items: center;
+
+    p {
+        margin-left: 2rem;
+    }
+    
+    div{
+        display: flex;
+        gap: 1rem;
+        margin-right: 2rem;
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
