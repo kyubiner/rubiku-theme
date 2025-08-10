@@ -2,7 +2,7 @@ items:
   - name: Home
     link: /
   - name: About
-    link: /about.html
+    link: /about.md
   - name: Blog
     link: /blog.html
   - name: Staff
