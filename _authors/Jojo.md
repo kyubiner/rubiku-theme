@@ -1,6 +1,6 @@
 ---
-short_name: Jojo
-name: JOrdy boniJO
+name: JOJO
+display_name: JOrdy boniJO
 position: Writer
 ---
 

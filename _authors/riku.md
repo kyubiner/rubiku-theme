@@ -1,6 +1,6 @@
 ---
-short_name: Riku
-name: Rubiku Riku
+name: Riku
+display_name: Rubiku Riku
 position: Writer
 ---
 
