@@ -1,9 +1,13 @@
 items:
   - name: Home
     link: /
+    src: https://unpkg.com/lucide-static/icons/house.svg
   - name: About
-    link: /about
+    link: /about.html
+    src: https://unpkg.com/lucide-static/icons/book-open.svg
   - name: Blog
     link: /blog.html
+    src: https://unpkg.com/lucide-static/icons/newspaper.svg
   - name: Staff
     link: /staff.html
+    src: https://unpkg.com/lucide-static/icons/id-card-lanyard.svg

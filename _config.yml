@@ -3,3 +3,7 @@ description: "this is description about jekyll theme, use ruby language programi
 encoding: utf-8
 
 exclude: ["README.md", "LICENSE", "*.gem", "*.gemspec", "Gemfile.lock"]
+collections:
+  authors:
+    output: true
+    permalink: /authors/:name/

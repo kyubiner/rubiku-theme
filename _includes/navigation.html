@@ -1,10 +1,10 @@
 <nav>
-    <p>Kyubiner Devlogs</p>
+    {% for item in site.data.navigation.items %}
     <div>
-        {% for item in site.data.navigation.items %}
-        <a href="{{ site.baseurl }}{{ item.link }}" {% if page.url==item.link %}style="color: red;" {% endif %}>
+        <a href="{{ site.baseurl }}{{ item.link }}" {% if page.url==item.link %}style="color: rgb(43, 43, 43);" {% endif %}>
+            <img src="{{ item.src }}" alt="{{ item.name }}" />
             {{ item.name }}
         </a>
-        {% endfor %}
     </div>
+    {%endfor %}
 </nav>

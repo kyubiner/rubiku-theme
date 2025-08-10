@@ -3,16 +3,18 @@ layout: default
 title: Staff
 ---
 
-<h1>Staff</h1>
+<h1 class="staff_title">Staff</h1>
 
-<ul>
+<ul class="parent_card">
     {% for author in site.authors %}
-    <li>
-        <h2>
-            <a href="{{ site.baseurl }}{{ author.url }}">{{ author.display_name }}</a>
-        </h2>
-        <h3>{{ author.position }}</h3>
-        <p>{{ author.content | markdownify }}</p>
-    </li>
+    <a href="{{ site.baseurl }}{{ author.url }}">
+        <li class="card">
+            <h2>
+                {{ author.display_name }}
+            </h2>
+            <h3>• {{ author.position }}</h3>
+            <p>{{ author.content | markdownify }}</p>
+        </li>
+    </a>
     {% endfor %}
 </ul>

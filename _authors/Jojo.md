@@ -1,4 +1,5 @@
 ---
+layout: author
 name: JOJO
 display_name: JOrdy boniJO
 position: Writer
