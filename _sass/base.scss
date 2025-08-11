@@ -1,20 +1,57 @@
 body {
-    background-color: #a1a1b4;
+    background-color: #FFF8E6;
     font-family: sans-serif;
     margin: 0;
-    color: #000;
+    color: #8D0B41;
 
     main {
-    margin-left: 1.5vw;
+        margin-left: 1.5vw;
+    }
+
+    .title_page {
+        margin: 0.7em auto;
+    }
+
+    .title_page::before {
+        content: "> ";
+    }
+
+}
+
+@mixin card_base {
+    margin: 0;
+    padding: 1rem;
+    list-style: none;
+    border: solid #D39D55;
+    max-width: 70vw;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    background-color: #D39D55;
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.5);
+    scale: 100%;
+    transition: 300ms;
+    &:hover {
+        scale: 101%;
+        transition: 300ms;
     }
 }
+
 
 @media (max-width: 768px) {
     body {
         margin-bottom: 8.5rem;
-
+    
         main {
             margin-left: 2vw;
+        }
+    
+        .title_page {
+            text-align: center;
+            margin: 1rem;
+        }
+    
+        .title_page::before {
+            content: "";
         }
     }
 }

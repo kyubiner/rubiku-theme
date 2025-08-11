@@ -2,17 +2,19 @@
 layout: default 
 ---
 
-<h1>{{ page.display_name }}</h1>
+<h1 class="title_page">{{ page.display_name }}</h1>
 <h2>{{ page.position }}</h2>
 
 {{ content }}
 
 <h2>Posts</h2>
-<ul>
+<ul class="parent_card">
     {% assign filtered_posts = site.posts | where: 'author', page.name %} {% for post in
     filtered_posts %}
-    <li>
-        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-    </li>
+    <a href="{{ site.baseurl }}{{ post.url }}">
+        <li class="card">
+            {{ post.title }}
+        </li>
+    </a>
     {% endfor %}
 </ul>

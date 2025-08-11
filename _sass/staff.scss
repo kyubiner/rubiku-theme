@@ -1,46 +1,35 @@
+@use "base.scss" as base;
+
 .parent_card {
     padding-left: 0;
     margin: 0;
 
     a {
         text-decoration: none;
-        color: black;
+        color: #8D0B41;
 
-        .card {
-            margin: 0;
-            padding: 1rem;
-            list-style: none;
-            border: solid rgb(208, 217, 220);
-            max-width: 70vw;
-            margin-bottom: 1rem;
-            border-radius: 10px;
-            background-color: rgb(208, 217, 220);
-            box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.5);
-            scale: 100%;
-            transition: 300ms;
-        }
-        .card:hover {
-            scale: 101%;
-            transition: 300ms;
+        .card_staff {
+            @include base.card_base;
         }
     }
 }
 
-@media (max-width: 768px) {
-    .staff_title {
-        text-align: center;
-        margin: 1rem;
-    }
 
+@media (max-width: 768px) {
     .parent_card {
         display: grid;
         grid-template-columns: 70vw;
         place-content: center;
         padding: auto;
+    
         .card {
             h2 {
                 text-align: center;
             }
+        }
+    
+        .card:hover {
+            scale: 105%;
         }
     }
 }

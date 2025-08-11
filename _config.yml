@@ -7,3 +7,4 @@ collections:
   authors:
     output: true
     permalink: /authors/:name/
+# bundle exec jekyll serve --trace

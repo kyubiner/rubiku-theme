@@ -1,0 +1,9 @@
+@use "base.scss" as base;
+
+.parent_card {
+    a {
+        .card {
+            @include base.card_base;
+        }
+    }
+}
