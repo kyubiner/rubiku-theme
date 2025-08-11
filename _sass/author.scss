@@ -1,9 +1,27 @@
 @use "base.scss" as base;
 
-.parent_card {
+.parent_card-author {
     a {
+        text-decoration: none;
+        color: black;
         .card {
             @include base.card_base;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .parent_card-author {
+        margin: 0;
+        padding-left: 1rem;
+
+        a {
+            margin-left: 0.5rem;
+            .card {
+                .card:hover {
+                    scale: 105%;
+                }
+            }
         }
     }
 }
