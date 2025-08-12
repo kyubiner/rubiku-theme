@@ -2,7 +2,10 @@
 
 .parent_card-staff {
     padding-left: 0;
-    margin: 0;
+    display: grid;
+    grid-template-columns: 40vw 40vw;
+    gap: 10vw;
+    place-content: center;
 
     a {
         text-decoration: none;
@@ -10,6 +13,10 @@
 
         .card_staff {
             @include base.card_base;
+            padding-left: 1.5rem;
+            h2 {
+                text-align: center;
+            }
         }
     }
 }
