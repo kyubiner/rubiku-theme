@@ -15,7 +15,11 @@ body {
     .title_page::before {
         content: "> ";
     }
-
+    
+    .text_basic {
+        margin: 0 3rem;
+        text-align: justify;
+    }
 }
 
 @mixin card_base {
@@ -37,6 +41,7 @@ body {
 }
 
 
+
 @media (max-width: 768px) {
     body {
         margin-bottom: 8.5rem;
@@ -52,6 +57,11 @@ body {
     
         .title_page::before {
             content: "";
+        }
+
+        .text_basic {
+            margin: 0 2rem;
+            align-content: center;
         }
     }
 }

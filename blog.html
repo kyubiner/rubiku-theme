@@ -10,7 +10,10 @@ title: Blog
     <a href="{{ post.url }}">
         <li class="card_staff">
             <h2>{{ post.title }}</h2>
-            <p>{{ post.excerpt }}</p>
+            <p>
+                <img src="{{ post.wakatime }}" alt="wakatime">
+                {{ post.excerpt }}
+            </p>
         </li>
     </a>
     {% endfor %}

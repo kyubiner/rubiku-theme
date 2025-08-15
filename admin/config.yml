@@ -24,6 +24,7 @@ collections:
         value_field: 'name',
       }
     - { label: 'Wakatime', name: 'wakatime', widget: 'string' }
+    - { label: 'Github', name: 'github', widget: 'string' }
     - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: 'authors'
     label: 'Authors'
