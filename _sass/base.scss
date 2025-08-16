@@ -8,17 +8,30 @@ body {
         margin-left: 1.5vw;
     }
 
+    .text_link {
+        text-decoration: none;
+        color: #8D0B41;
+        transition: 300ms;
+        border-bottom: none;
+
+        &:hover {
+            border-bottom: solid #8D0B41;
+            transition: 300ms;
+        }
+    }
+
     .title_page {
-        margin: 0.7em auto;
+        margin: 1em auto 1.5em 1em;
     }
 
     .title_page::before {
         content: "> ";
     }
-    
+
     .text_basic {
         margin: 0 3rem;
         text-align: justify;
+        font-size: 25px;
     }
 }
 
@@ -34,6 +47,7 @@ body {
     box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.5);
     scale: 100%;
     transition: 300ms;
+
     &:hover {
         scale: 101%;
         transition: 300ms;
@@ -45,16 +59,16 @@ body {
 @media (max-width: 768px) {
     body {
         margin-bottom: 8.5rem;
-    
+
         main {
             margin-left: 2vw;
         }
-    
+
         .title_page {
             text-align: center;
-            margin: 1rem;
+            margin: 1.5rem;
         }
-    
+
         .title_page::before {
             content: "";
         }

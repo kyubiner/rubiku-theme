@@ -2,11 +2,11 @@
 layout: default 
 ---
 
-<h1>{{ page.title }}</h1>
+<h1 class="title_page">{{ page.title }}</h1>
 
 <p>
     {{ page.date | date_to_string }} {% assign author = site.authors | where: 'name', page.author |
-    first %} {% if author %} - <a href="{{ author.url }}">{{ author.display_name }}</a>
+    first %} {% if author %} - <a class="text_link" href="{{ author.url }}">{{ author.display_name }}</a>
     {% endif %}
 </p>
 
@@ -15,4 +15,6 @@ layout: default
 </a>
 
 
-{{ content }}
+<div class="text_basic">
+    {{ content }}
+</div>
