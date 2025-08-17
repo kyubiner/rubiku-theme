@@ -3,17 +3,20 @@ layout: default
 ---
 
 <h1 class="title_page">{{ page.display_name }}</h1>
-<h2>{{ page.position }}</h2>
-
-{{ content }}
-
-<h2>Posts</h2>
+<section class="text_left">
+    <h2>{{ page.position }}</h2>
+    
+    {{ content }}
+    
+    <h2>Posts</h2>
+</section>
 <ul class="parent_card-author">
     {% assign filtered_posts = site.posts | where: 'author', page.name %} {% for post in
     filtered_posts %}
     <a href="{{ site.baseurl }}{{ post.url }}">
         <li class="card">
-            {{ post.title }}
+            {{ post.title }} 
+            <img src="{{post.wakatime}}" alt="wakatime badge">
         </li>
     </a>
     {% endfor %}

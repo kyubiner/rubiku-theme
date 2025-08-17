@@ -1,12 +1,32 @@
+@font-face {
+    font-family: pixelFont;
+    src: url("/assets/font/HomeVideo-BLG6G.ttf");
+}
+
+@keyframes fadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
 body {
     background-color: #FFF8E6;
-    font-family: sans-serif;
+    font-family: pixelFont;
     margin: 0;
     color: #8D0B41;
 
-    main {
+    font-family:'Franklin Gothic Medium',
+    'Arial Narrow',
+    Arial,
+    sans-serif main {
         margin-left: 1.5vw;
     }
+
+
 
     .text_link {
         text-decoration: none;
@@ -21,17 +41,40 @@ body {
     }
 
     .title_page {
+        position: relative;
         margin: 1em auto 1.5em 1em;
+
+        &::before {
+            content: "> ";
+        }
+        
+        &::before,
+        &::after {
+            transition: opacity 0.3s ease;
+        }
+
+        &:hover::before {
+            content: "> ";
+            animation: fadeOut 1s infinite alternate;
+            -webkit-animation: fadeOut 1s infinite alternate;
+}
+
+        &:hover::after {
+            content: " ";
+            animation: fadeIn 1s infinite alternate;
+            -webkit-animation: fadeIn 1s infinite alternate;
+}
     }
 
-    .title_page::before {
-        content: "> ";
-    }
 
     .text_basic {
         margin: 0 3rem;
-        text-align: justify;
-        font-size: 25px;
+        font-size: 16px;
+    }
+
+    .text_left {
+        margin-left: 3rem;
+        text-align: left;
     }
 }
 
@@ -39,22 +82,32 @@ body {
     margin: 0;
     padding: 0.5rem;
     list-style: none;
-    border: solid #D39D55;
+    border: solid;
     max-width: 60vw;
     margin-bottom: 1rem;
-    border-radius: 10px;
     background-color: #D39D55;
-    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 1);
     scale: 100%;
     transition: 300ms;
-
+    border-radius: 5px;
+    
     &:hover {
         scale: 101%;
         transition: 300ms;
     }
 }
 
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1em;
+}
 
+table,
+th,
+td {
+    border: solid;
+}
 
 @media (max-width: 768px) {
     body {
@@ -67,6 +120,11 @@ body {
         .title_page {
             text-align: center;
             margin: 1.5rem;
+
+            &:hover::before,
+            &:hover::after {
+                content: "";
+            }
         }
 
         .title_page::before {
@@ -76,6 +134,10 @@ body {
         .text_basic {
             margin: 0 2rem;
             align-content: center;
+        }
+
+        .text_left {
+            margin-left: 2rem;
         }
     }
 }

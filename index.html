@@ -7,7 +7,20 @@ title: Rubiku
 
 <p class="text_basic">
     Welcome to Rubiku-theme!<br><br>
-    This is a blog website built with jekyll, a static side generator in the ruby programing language.<br><br>
-    This contains projects, I've created to share with you all, as pratice in mastering various, programing languages , or as a means of documenting future project I've created<br><br>
-    So, what are you waiting for? Explore this website ヾ(≧▽≦*)o
-</p>
+    This is a blog website built with jekyll, a static side generator in the ruby programing language.
+    This contains projects, I've created to share with you all, as pratice in mastering various, programing languages , or as a means of documenting future project I've created
+    So, what are you waiting for? Explore this website!!!
+</p><br>
+
+<h2 class="text_left">Latest posts</h2>
+
+<ul class="parent_card-author">
+    {% for post in site.posts %}
+    <a href="{{ site.baseurl }}{{ post.url }}">
+        <li class="card">
+            {{ post.title }} 
+            <img src="{{post.wakatime}}" alt="wakatime badge">
+        </li>
+    </a>
+    {% endfor %}
+</ul>

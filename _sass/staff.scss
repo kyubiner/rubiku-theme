@@ -3,9 +3,10 @@
 .parent_card-staff {
     padding-left: 0;
     display: grid;
-    grid-template-columns: 40vw 40vw;
-    gap: 10vw;
-    place-content: center;
+    grid-template-columns: 30vw 30vw 30vw;
+    gap: 2vw;
+    place-content: left;
+    margin-left: 3rem;
 
     a {
         text-decoration: none;
@@ -28,6 +29,7 @@
         grid-template-columns: 70vw;
         place-content: center;
         padding: auto;
+        margin-left: 0;
     
         .card_staff {
             h2 {

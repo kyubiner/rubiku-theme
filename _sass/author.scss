@@ -1,11 +1,16 @@
 @use "base.scss" as base;
 
 .parent_card-author {
+    display: grid;
+    grid-template-columns: auto auto auto;
     a {
         text-decoration: none;
         color: #8D0B41;
         .card {
             @include base.card_base;
+            display: flex;
+            justify-content: space-between;
+            max-width: 30vw;
         }
     }
 }
@@ -14,10 +19,12 @@
     .parent_card-author {
         margin: 0;
         padding-left: 1rem;
+        grid-template-columns: auto;
 
         a {
             margin-left: 0.5rem;
             .card {
+                max-width: 80vw;
                 .card:hover {
                     scale: 105%;
                 }

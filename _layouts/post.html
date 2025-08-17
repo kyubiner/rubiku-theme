@@ -4,13 +4,13 @@ layout: default
 
 <h1 class="title_page">{{ page.title }}</h1>
 
-<p>
+<p class="text_left">
     {{ page.date | date_to_string }} {% assign author = site.authors | where: 'name', page.author |
     first %} {% if author %} - <a class="text_link" href="{{ author.url }}">{{ author.display_name }}</a>
     {% endif %}
 </p>
 
-<a href="{{ page.github | # }}">
+<a class="text_left" href="{{ page.github | # }}">
     <img src="{{ page.wakatime }}" alt="Hackatime Badge">
 </a>
 
