@@ -14,7 +14,6 @@
 
         .card_staff {
             @include base.card_base;
-            padding-left: 1.5rem;
             h2 {
                 text-align: center;
             }

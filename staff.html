@@ -12,8 +12,10 @@ title: Staff
             <h2>
                 {{ author.display_name }}
             </h2>
-            <h3>• {{ author.position }}</h3>
-            <p>{{ author.content | markdownify }}</p>
+            <section class="padding_card">
+                <h3>• {{ author.position }}</h3>
+                <p>{{ author.content | markdownify }}</p>
+            </section>
         </li>
     </a>
     {% endfor %}
