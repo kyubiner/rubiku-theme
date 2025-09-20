@@ -7,16 +7,18 @@ title: Staff
 
 <ul class="parent_card-staff">
     {% for author in site.authors %}
-    <a href="{{ site.baseurl }}{{ author.url }}">
-        <li class="card_staff">
-            <h2>
-                {{ author.display_name }}
-            </h2>
-            <section class="padding_card">
-                <h3>• {{ author.position }}</h3>
-                <p>{{ author.content | markdownify }}</p>
-            </section>
-        </li>
-    </a>
+    <div class="card_staff">
+        <a href="{{ site.baseurl }}{{ author.url }}">
+            <li>
+                <h2>
+                    {{ author.display_name }}
+                </h2>
+                <section class="padding_card">
+                    <h3>• {{ author.position }}</h3>
+                    <p>{{ author.content | markdownify }}</p>
+                </section>
+            </li>
+        </a>
+    </div>
     {% endfor %}
 </ul>

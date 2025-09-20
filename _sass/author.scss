@@ -2,15 +2,28 @@
 
 .parent_card-author {
     display: grid;
-    grid-template-columns: auto auto auto;
-    a {
+    grid-template-columns: 30vw 30vw 30vw;
+    gap: 2%;
+
+    .card {
+        @include base.card_base;
+        max-width: 30vw;
         text-decoration: none;
-        color: #8D0B41;
-        .card {
-            @include base.card_base;
-            display: flex;
+        display: grid;
+        grid-auto-flow: column;
+        align-items: center;
+
+        
+        a {
+            text-decoration: none;
+            color: #8D0B41;
+            display: flex; 
+            align-items: center;
             justify-content: space-between;
-            max-width: 30vw;
+            gap: 10px;
+            img {
+                vertical-align: middle;
+            }
         }
     }
 }
@@ -19,14 +32,15 @@
     .parent_card-author {
         margin: 0;
         grid-template-columns: auto;
+        vertical-align: middle;
 
-        a {
-            margin-left: 0.5rem;
-            .card {
-                max-width: 80vw;
-                .card:hover {
-                    scale: 105%;
-                }
+        .card {
+            max-width: 80vw;
+            .card:hover {
+                scale: 105%;
+            }
+            a {
+                margin-left: 0.5rem;
             }
         }
     }

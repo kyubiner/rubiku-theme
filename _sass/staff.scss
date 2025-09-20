@@ -8,15 +8,16 @@
     place-content: left;
     margin-left: 3rem;
 
-    a {
-        text-decoration: none;
+    .card_staff {
         color: #8D0B41;
-
-        .card_staff {
-            @include base.card_base;
-            h2 {
-                text-align: center;
+        @include base.card_base;
+        text-decoration: none;
+        a {
+            text-decoration: none;
+            color: #8D0B41;
             }
+        h2 {
+            text-align: center;
         }
     }
 }
