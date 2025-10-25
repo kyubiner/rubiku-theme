@@ -6,7 +6,8 @@ A blog website built using Jekyll, a Ruby bundle for static side generators. I c
 # Features
 - Devlog
 - Tutorial
-- Comment (on-going)
+- Comment
+- RSS (on-going)
 
 # Usage
 1. At the top of this page, select **Use this template** &gt; **Create a new repository** to clone the template to your account.

@@ -6,11 +6,13 @@ layout: default
 <section class="text_left">
     <h2>{{ page.position }}</h2>
     
-    {{ content }}
+    <div class="text_basic" style="margin: auto 0;">
+        {{ content }}
+    </div>
     
     <h2>Posts</h2>
 </section>
-<ul class="parent_card-author">
+<ul class="parent_card-author" style="padding-left: 30px;">
     {% assign filtered_posts = site.posts | where: 'author', page.name %} {% for post in
     filtered_posts %}
     <div class="card">

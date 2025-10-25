@@ -50,10 +50,11 @@
         display: grid;
         grid-template-columns: auto;
         place-content: center;
-        padding-left: 10%;
+        padding: 0 5%;
+        max-width: 100%;
         
         .card_blog {
-            max-width: 80%;
+            max-width: 100%;
             h2 {
                 text-align: center;
             }
