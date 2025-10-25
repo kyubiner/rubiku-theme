@@ -10,18 +10,6 @@ layout: default
     {% endif %}
 </p>
 
-<div class="text_left">
-    {% if page.github %}
-    <img class="vertical-align: baseline" src="https://unpkg.com/lucide-static/icons/link.svg" height="15px" width="15px"/>
-    <a href="{{ page.github }}">Reporisitory Github</a>
-    {% endif %}
-    <a href="{{ page.github | default:'#' }}">
-        {% if page.wakatime %}
-        <img style="vertical-align: middle" src="{{ page.wakatime }}" alt="wakatime badge">
-        {% endif %}
-    </a>
-</div>
-
 <div class="text_basic">
     {{ content }}
 </div>
