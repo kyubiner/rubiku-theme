@@ -1,5 +1,5 @@
 nav {
-    background-color: #D39D55;
+    background-color: var(--border);
     display: flex;
     justify-content: space-around;
     width: 100wh;
@@ -17,7 +17,7 @@ nav {
             align-content: center;
             align-items: center;
             text-decoration: none;
-            color: #8D0B41;
+            color: var(--accent);
             transition: 300ms;
         }
         a:hover {

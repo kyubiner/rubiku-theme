@@ -2,7 +2,8 @@
 layout: author
 name: Riku
 display_name: Rubiku Riku
-position: Writer
+position: Writer - Devlogs / Other
+img: /assets/uploads/rubiku.png
 ---
 
-Riku has author now.
+im has author now.

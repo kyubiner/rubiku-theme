@@ -8,12 +8,12 @@
     justify-content: center;
 
     .card_blog {
-        color: #8D0B41;
+        color: var(--text);
         @include base.card_base;
         text-decoration: none;
         a {
             text-decoration: none;
-            color: #8D0B41;
+            color: var(--accent);
             }
         h3 {
             text-align: center;
@@ -39,8 +39,9 @@
 }
 
 .comment {
-    margin-top: 2rem;
     font-family: pixelFontBasic;
+    max-width: 90%;
+    margin: 2rem auto;
 }
 
 @media (max-width: 768px) {

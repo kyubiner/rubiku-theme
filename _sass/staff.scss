@@ -9,12 +9,13 @@
     place-content: left;
     
     .card_staff {
-        color: #8D0B41;
+        color: var(--text);
         @include base.card_base;
         text-decoration: none;
+
         a {
             text-decoration: none;
-            color: #8D0B41;
+            color: var(--accent);
             }
         h3 {
             text-align: center;
@@ -27,7 +28,7 @@
     .parent_card-staff {
         gap: 10vw;
         display: grid;
-        grid-template-columns: 40vw 40vw;
+        grid-template-columns: auto;
         place-content: center;
         padding: auto;
         margin-left: 0;
