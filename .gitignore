@@ -4,3 +4,5 @@
 .sass-cache
 _site
 Gemfile.lock
+rubiku-theme-0.1.0.gem
+rubiku-theme.gemspec
