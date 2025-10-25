@@ -14,9 +14,9 @@ title: Rubiku
 
 <h2 class="text_left">Latest posts</h2>
 
-<ul class="parent_card-author">
+<ul class="parent_card-author" style="padding-left: 30px;">
     {% for post in site.posts limit:6%}
-    <div class="card">
+    <div class="card" >
         <a href="{{ site.baseurl }}{{ post.url }}">
             {{ post.title }} 
         </a>
