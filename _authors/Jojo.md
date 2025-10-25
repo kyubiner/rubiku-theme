@@ -6,4 +6,4 @@ position: Writer - Tutorial
 img: /assets/uploads/lacie.jpg
 ---
 
-euy euy euy euy.
+(fake person) euy euy euy euy. 
