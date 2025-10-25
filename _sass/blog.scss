@@ -1,14 +1,13 @@
 @use "base.scss" as base;
 
-.parent_card-staff {
+.parent_card-blog {
     padding-left: 0;
     display: grid;
+    grid-template-columns: 27vw 27vw 27vw;
+    gap: 4vw;
     justify-content: center;
-    grid-template-columns: 20vw 20vw;
-    gap: 15vw;
-    place-content: left;
-    
-    .card_staff {
+
+    .card_blog {
         color: #8D0B41;
         @include base.card_base;
         text-decoration: none;
@@ -22,23 +21,44 @@
     }
 }
 
+.blog_main {
+    max-width: var(--content-size);
+    margin: 0 auto;
+}
+
+.mainTitle_blog {
+    margin: 3em 0 1em 0;
+}
+
+.title_blog {
+    margin: 1em auto 2px 1em;
+}
+
+.subTitle_blog {
+    margin-left: 32px;
+}
+
+.comment {
+    margin-top: 2rem;
+    font-family: pixelFontBasic;
+}
 
 @media (max-width: 768px) {
-    .parent_card-staff {
-        gap: 10vw;
+    .parent_card-blog {
+        justify-content: center;
         display: grid;
-        grid-template-columns: 40vw 40vw;
+        grid-template-columns: auto;
         place-content: center;
         padding: auto;
-        margin-left: 0;
-    
-        .card_staff {
+
+        .card_blog {
+            justify-content: center;
             h2 {
                 text-align: center;
             }
         }
     
-        .card_staff:hover {
+        .card_blog:hover {
             scale: 105%;
         }
     }

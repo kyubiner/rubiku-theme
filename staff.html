@@ -10,12 +10,12 @@ title: Staff
     <div class="card_staff">
         <a href="{{ site.baseurl }}{{ author.url }}">
             <li>
-                <h2>
+                <h3>
                     {{ author.display_name }}
-                </h2>
+                </h3>
                 <section class="padding_card">
-                    <h3>• {{ author.position }}</h3>
-                    <p>{{ author.content | markdownify }}</p>
+                    <h4>• {{ author.position }}</h4>
+                    <span class="text_basic">{{ author.content | markdownify }}</span>
                 </section>
             </li>
         </a>

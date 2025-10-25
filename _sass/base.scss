@@ -1,41 +1,72 @@
-@font-face {
-    font-family: pixelFont;
-    src: url("/assets/font/HomeVideo-BLG6G.ttf");
+:root {
+    --content-size: 720px;
+    --bg: #FAF3DD;
+    --bg-secondary: #F5E9D0;
+    --text: #2B1E1E;
+    --heading: #800000;
+    --accent: #A63C3C;
+    --border: #CBB69D;
+}
+[data-theme="dark"] {
+    --bg: #1E0E0E;
+    --bg-secondary: #2C1A1A;
+    --text: #F5E8C7;
+    --heading: #E09C9C;
+    --accent: #D46A6A;
+    --border: #5C4040;
 }
 
-@keyframes fadeOut {
-    0% {opacity: 1;}
-    100% {opacity: 0;}
-}
-
-@keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-}
+// vanilla Section
 
 body {
-    background-color: #FFF8E6;
+    background-color: #fff8e6;
     font-family: pixelFont;
     margin: 0;
-    color: #8D0B41;
+    padding: 0;
+    color: #8d0b41;
 
-    font-family:'Franklin Gothic Medium',
-    'Arial Narrow',
+    font-family: "Franklin Gothic Medium",
+    "Arial Narrow",
     Arial,
     sans-serif main {
         margin-left: 1.5vw;
     }
 
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: auto auto;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+}
 
+    p {
+        font-size: 1rem;
+        line-height: 1.55;
+        margin: 1px 0;
+    }
+
+    h4 {
+        margin: 7px 0;
+    }
+
+    table,
+    th,
+    td {
+        border: solid;
+    }
+
+    // class Section
 
     .text_link {
         text-decoration: none;
-        color: #8D0B41;
+        color: #8d0b41;
         transition: 300ms;
         border-bottom: none;
 
         &:hover {
-            border-bottom: solid #8D0B41;
+            border-bottom: solid #8d0b41;
             transition: 300ms;
         }
     }
@@ -47,7 +78,7 @@ body {
         &::before {
             content: "> ";
         }
-        
+
         &::before,
         &::after {
             transition: opacity 0.3s ease;
@@ -57,19 +88,19 @@ body {
             content: "> ";
             animation: fadeOut 1s infinite alternate;
             -webkit-animation: fadeOut 1s infinite alternate;
-}
+        }
 
         &:hover::after {
             content: " ";
             animation: fadeIn 1s infinite alternate;
             -webkit-animation: fadeIn 1s infinite alternate;
-}
+        }
     }
-
 
     .text_basic {
         margin: 0 3rem;
         font-size: 16px;
+        font-family: pixelFontBasic;
     }
 
     .text_left {
@@ -78,6 +109,12 @@ body {
     }
 }
 
+.padding_card {
+    padding: 0 1rem;
+}
+
+// @ Section
+
 @mixin card_base {
     margin: 0;
     padding: 0.5rem;
@@ -85,33 +122,17 @@ body {
     border: solid;
     max-width: 60vw;
     margin-bottom: 1rem;
-    background-color: #D39D55;
-    color: #8D0B41;
+    background-color: #d39d55;
+    color: #8d0b41;
     box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 1);
     scale: 100%;
     transition: 300ms;
     border-radius: 5px;
-    
+
     &:hover {
         scale: 101%;
         transition: 300ms;
     }
-}
-
-.padding_card {
-    padding-left: 1.5rem;
-}
-
-p {
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 1em;
-}
-
-table,
-th,
-td {
-    border: solid;
 }
 
 @media (max-width: 768px) {
@@ -119,12 +140,12 @@ td {
         margin-bottom: 8.5rem;
 
         main {
-            margin-left: 2vw;
+            justify-content: center;
         }
 
         .title_page {
             text-align: center;
-            margin: 1.5rem;
+            // margin: 1rem;
 
             &:hover::before,
             &:hover::after {
@@ -144,5 +165,35 @@ td {
         .text_left {
             margin-left: 2rem;
         }
+    }
+}
+
+@font-face {
+    font-family: pixelFont;
+    src: url("/assets/font/HomeVideo-BLG6G.ttf");
+}
+
+@font-face {
+    font-family: pixelFontBasic;
+    src: url("/assets/font/VCR_OSD_MONO.ttf");
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
     }
 }

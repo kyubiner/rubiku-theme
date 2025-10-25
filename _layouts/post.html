@@ -1,15 +1,35 @@
 --- 
 layout: default 
 ---
+<div class="blog_main">
+    <div class="mainTitle_blog">
+        <h1 class="title_blog">{{ page.title }}</h1>
+        <p class="subTitle_blog">
+            {{ page.date | date_to_string }} {% assign author = site.authors | where: 'name', page.author |
+            first %} {% if author %} - <a class="text_link" href="{{ author.url }}">{{ author.display_name }}</a>
+            {% endif %}
+        </p>
+    </div>
+    
+    <div class="text_basic">
+        {{ content }}
+    </div>
 
-<h1 class="title_page">{{ page.title }}</h1>
-
-<p class="text_left">
-    {{ page.date | date_to_string }} {% assign author = site.authors | where: 'name', page.author |
-    first %} {% if author %} - <a class="text_link" href="{{ author.url }}">{{ author.display_name }}</a>
-    {% endif %}
-</p>
-
-<div class="text_basic">
-    {{ content }}
+    <div class="comment">
+        <script src="https://giscus.app/client.js"
+            data-repo="kyubiner/rubiku-theme"
+            data-repo-id="R_kgDOOlWqnw"
+            data-category="General"
+            data-category-id="DIC_kwDOOlWqn84CxDZE"
+            data-mapping="pathname"
+            data-strict="0"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="bottom"
+            data-theme="gruvbox_light"
+            data-lang="en"
+            crossorigin="anonymous"
+            async>
+        </script>
+    </div>
 </div>

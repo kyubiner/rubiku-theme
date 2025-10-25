@@ -5,19 +5,16 @@ title: Blog
 
 <h1 class="title_page">Posts</h1>
 
-<ul class="parent_card-staff">
+<ul class="parent_card-blog">
     {% for post in site.posts %}
-    <div class="card_staff">
+    <div class="card_blog">
         <a href="{{ post.url }}">
             <li>
-                <h2>{{ post.title }}</h2>
+                <h3>{{ post.title }}</h2>
                 <section class="padding_card">
-                    <p>
-                        {% if post.wakatime %}
-                        <img style="vertical-align: middle" src="{{ post.wakatime }}" alt="wakatime badge">
-                        {% endif %}
+                    <span class="text_basic">
                         {{ post.excerpt }}
-                    </p>
+                    </span>
                 </section>
             </li>
         </a>
