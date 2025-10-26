@@ -3,7 +3,7 @@
 
 Gem::Specification.new do |spec|
   spec.name = "rubiku-theme"
-  spec.version = "0.1.0"
+  spec.version = "0.1.1"
   spec.authors = ["Rubikuriku"]
   spec.email = ["hamdaraksa@gmail.com"]
 

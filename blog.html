@@ -13,7 +13,7 @@ title: Blog
                 <h3>{{ post.title }}</h2>
                 <section class="padding_card">
                     <span class="text_basic">
-                        {{ post.excerpt }}
+                        {{ post.excerpt | split: ' ' | slice: 0, 5 | join: ' '}}...
                     </span>
                 </section>
             </li>
